@@ -9,8 +9,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - cd pizza-shop-api
       - mvn package
 artifacts:
   files:
-    - pizza-shop-api/target/pizza-shop-api-0.0.1-SNAPSHOT.jar
+    - target/pizza-shop-api-0.0.1-SNAPSHOT.jar
